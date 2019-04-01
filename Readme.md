@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Степанова](https://up.htmlacademy.ru/adaptive/16/user/90251).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Удод] (https://htmlacademy.ru/profile/id523387).
 
 ---
 
