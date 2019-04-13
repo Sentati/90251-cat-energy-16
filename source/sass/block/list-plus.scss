@@ -1,0 +1,8 @@
+.list-plus {
+  @include reset-list;
+}
+
+.list-plus__button {
+  @include button-outline;
+  font-family: "Oswald", "Arial", sans-serif;
+}

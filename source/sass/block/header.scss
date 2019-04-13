@@ -1,0 +1,42 @@
+.page-header {
+  padding-top: 12px;
+  width: 320px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo {
+  width: 220px;
+  height: 37px;
+  padding-bottom: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
+.st0 {
+  fill: #FDC305;
+}
+  
+.st1 {
+  fill: #F06351;
+}
+
+.page-header__toggle {
+  @include button-outline;
+  background-color: #ffffff;
+  padding-top: 5px;
+}

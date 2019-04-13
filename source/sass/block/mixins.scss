@@ -1,0 +1,67 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-outline {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 0;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  outline: 0;
+  border: none;
+  background-color: #68b738;
+}
+
+@mixin title-desk {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin title-two {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #111111;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin headline {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+// Найден в интернете Мне такое не написать, ума не хватает. Сомневаюсь, что его нужно использовать.
+
+// @mixin element-invisible($enforce: true) {
+//   $important: if($enforce, "!important", null);
+
+//   position: absolute #{$important};
+//   width: 1px #{$important};
+//   height: 1px #{$important};
+//   padding: 0 #{$important};
+//   overflow: hidden #{$important};
+//   clip: rect(0, 0, 0, 0) #{$important};
+//   white-space: nowrap #{$important};
+//   border: 0 #{$important};
+// }

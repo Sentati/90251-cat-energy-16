@@ -1,0 +1,19 @@
+.map {
+  position: relative;
+}
+
+.map-img {
+  width: 320px;
+  height: 400px;
+  position: absolute;
+  top: -4%;
+  left: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+  width: 320px;
+  height: 375px;
+  border: 0;
+}

@@ -1,0 +1,11 @@
+.item-plus {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 19px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.item-plus__title {
+  @include title-desk;
+  line-height: 16px;
+}
