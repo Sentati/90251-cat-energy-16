@@ -1,0 +1,9 @@
+.order {
+  padding: 136px 20px 20px;
+}
+
+.order__button {
+  @include button-outline;
+  font-family: "Oswald", "Ariel",sans-serif;
+}
+

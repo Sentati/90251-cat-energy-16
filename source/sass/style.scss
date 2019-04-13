@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/../fonts/fonts/oswaldregular.woff2") format("woff2"),
+    url("/../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: medium;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+@import "block/variables.scss";
+@import "block/mixins.scss";
+@import "block/body.scss";
+@import "block/container.scss";
+@import "block/header.scss";
+@import "block/main-nav.scss";
+@import "block/list-navigation.scss";
+@import "block/offer.scss";
+@import "block/order.scss";
+@import "block/diet.scss";
+@import "block/energy.scss";
+@import "block/reason.scss";
+@import "block/list-reason.scss";
+@import "block/story.scss";
+@import "block/fact.scss";
+@import "block/result.scss";
+@import "block/welcome.scss";
+@import "block/map.scss";
+@import "block/footer-main.scss";
+@import "block/footer-main__social.scss";
+@import "block/footer-main__copyright.scss";
+@import "block/catalog.scss";
+@import "block/sort-list.scss";
+@import "block/price.scss";
+@import "block/more.scss";
+@import "block/plus.scss";
+@import "block/list-plus.scss";
+@import "block/item-plus.scss";
+@import "block/intro-plus.scss";
+@import "block/item-sort.scss";
+@import "block/bonus.scss";

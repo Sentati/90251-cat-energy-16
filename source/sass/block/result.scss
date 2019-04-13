@@ -1,0 +1,13 @@
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story__img {
+  margin-bottom: 35px;
+}
+
+.result__compare {
+  @include title-desk;
+  margin-bottom: 15px;
+}

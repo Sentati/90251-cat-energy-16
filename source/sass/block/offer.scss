@@ -1,0 +1,39 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("/../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -20px;
+  padding: 35px 20px 162px;
+}
+
+.offer__img {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 55%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.offer__title {
+  padding-bottom: 30px;
+}
+
+.offer__intro {
+  font-size: 14px;
+  line-height: 14px;
+}

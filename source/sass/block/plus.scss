@@ -1,0 +1,24 @@
+.plus {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 4px;
+    background-color: #68b738;
+    margin-top: 2px;
+  }
+}
+
+.plus__title {
+  font-size: 24px;
+  line-height: 24px;
+}

@@ -1,0 +1,22 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0;
+}
+
+.price__title {
+  width: 75px;
+}
+
+.price__intro {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.price__field,
+.price__value {
+  display: block;
+  width: 45px;
+}
+
