@@ -1,5 +1,22 @@
 .container {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20;
 }
+
+// планшетная версия
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+// десктопая версия
+@media (min-width: 1200px) {
+  .container {
+    width: auto;
+    padding: 0 40px;
+  }
+}
+
