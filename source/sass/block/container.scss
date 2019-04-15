@@ -4,18 +4,16 @@
   padding: 0 20;
 }
 
-// планшетная версия
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .container {
-    width: auto;
+    width: 708px;
     padding: 0 30px;
   }
 }
 
-// десктопая версия
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .container {
-    width: auto;
+    width: 1440px;
     padding: 0 40px;
   }
 }

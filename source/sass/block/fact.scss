@@ -1,12 +1,15 @@
 .story__fact {
+  max-width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .story__wrap {
   position: relative;
-  width: 124px;
+  width: 120px;
   border: 1px solid #cfcfcf;
   border-radius: 3px;
   padding: 18px 0;

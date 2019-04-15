@@ -3,6 +3,11 @@
   width: 320px;
 }
 
+.page-header,
+.page-header__logo {
+  @include no-outline();
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -28,15 +33,30 @@
 
 
 .st0 {
-  fill: #FDC305;
+  fill: #fdc305;
 }
-  
+
 .st1 {
-  fill: #F06351;
+  fill: #f06351;
 }
 
 .page-header__toggle {
   @include button-outline;
   background-color: #ffffff;
   padding-top: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    padding-top: 60px;
+    width: auto;
+  }
+
+  .page-header__logo {
+    width: 220px;
+    height: 37px;
+  }
 }
