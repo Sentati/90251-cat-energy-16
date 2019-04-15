@@ -1,19 +1,23 @@
 body {
-  min-width: 320px;
+  width: 320px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  background-color: brown;
 }
 
 
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   body {
+//     width: 768px;
+//     padding: 0;
+//     margin: 0 auto;
+//   }
+// }
 
 
-@media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   body {
+//     width: 1440px;
+//     margin: 0 auto;
+//   }
+// }
