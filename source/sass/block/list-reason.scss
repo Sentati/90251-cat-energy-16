@@ -1,11 +1,12 @@
 .list-reason {
   @include reset-list;
+  padding-bottom: 42px;
 }
 
 .list-reason__item {
   position: relative;
   padding-left: 80px;
-  padding-bottom: 7px;
+  padding-bottom: 21px;
 
   &::before {
     width: 60px;
