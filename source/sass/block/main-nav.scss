@@ -1,7 +1,7 @@
 .main-nav {
   padding: 0 20px;
   margin: 0;
-  background-color: azure;
+  background-color: red;
 }
 
 @media (min-width: $tablet-width) {
@@ -9,6 +9,6 @@
     width: 596px;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: rgb(158, 179, 152);
   }
 }
