@@ -1,15 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.component {
+  box-sizing: content-box;
+}
+
+
 body {
   width: 320px;
   padding: 0;
   margin: 0;
-
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #444444;
-  background-color: blueviolet;
-  // background-color: $bg-Light;
 }
 
 h1,
@@ -41,6 +48,12 @@ h3 {
 }
 
 p {
+  font-family: "Arial",
+    sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
   margin: 0;
   padding: 0;
 }

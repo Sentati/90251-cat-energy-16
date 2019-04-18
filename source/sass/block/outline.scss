@@ -1,15 +1,8 @@
-// @media (min-width: $tablet-width) {
-//   body {
-//     width: 768px;
-//     padding: 0;
-//     margin: 0 auto;
-//   }
-// }
-
-
-// @media (min-width: $desktop-width) {
-//   body {
-//     width: 1440px;
-//     margin: 0 auto;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+    padding: 0;
+    margin: 0 auto;
+    background: $bg-Light;
+  }
+}
