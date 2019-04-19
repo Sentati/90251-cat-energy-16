@@ -86,7 +86,8 @@ input[type="radio"].visually-hidden {
 
 
 // Планшет
-@media (min-width: $tablet-width) { h1 {
+@media (min-width: $tablet-width) {
+  h1 {
     font-size: 60px;
     line-height: 60px;
   }

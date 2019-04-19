@@ -13,7 +13,6 @@
 }
 
 .item-reason__icon {
-  position: relative;
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -86,11 +85,7 @@
 }
 
 
-/*Планшет*/
+// Планшет
+// @media (min-width: $tablet-width) {
 
-@media (min-width: $tablet-width) {
-  .list-reason {
-    @include reset-list;
-    padding-bottom: 42px;
-  }
-
+// }
