@@ -34,11 +34,13 @@
   }
 }
 
+
+// Планшет
+
 @media (min-width: $tablet-width) {
   .list-navigation {
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
 
     width: 440px;
@@ -49,11 +51,14 @@
     font-size: 18px;
     line-height: 25px;
     border: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .list-navigation__item:nth-child(1),
   .list-navigation__item:nth-child(2) {
     text-align: left;
+    margin-right: auto;
   }
 
   .list-navigation__item:nth-child(1) {
@@ -63,11 +68,6 @@
   .list-navigation__item:nth-child(2),
   .list-navigation__item:nth-child(3) {
     width: 155px;
-  }
-
-  .list-navigation__item:nth-child(1),
-  .list-navigation__item:nth-child(2) {
-   margin-right: auto;
   }
 
   .list-navigation-item:nth-child(3) {

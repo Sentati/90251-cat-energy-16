@@ -41,6 +41,9 @@
   padding-top: 5px;
 }
 
+
+// Планшет
+
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
@@ -48,7 +51,6 @@
     justify-content: space-between;
     padding: 30px 30px 60px;
     margin: 0;
-    background-color: aqua;
   }
 
   .page-header__logo {

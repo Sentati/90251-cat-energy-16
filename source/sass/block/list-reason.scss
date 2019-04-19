@@ -1,25 +1,27 @@
 .list-reason {
   @include reset-list;
-  padding-bottom: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 21px;
 }
 
 .list-reason__item {
-  position: relative;
-  padding-left: 80px;
-  padding-bottom: 21px;
-
-  &::before {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: #68b738;
-  }
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.item--benefit {
+.item-reason__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: #68b738;
+}
+
+
+.item-reason__desk--benefit {
   &::after {
     width: 50px;
     height: 50px;
@@ -27,14 +29,15 @@
     content: "";
     top: 50%;
     left: 0;
-    transform: translate(15%, -65%);
     background-image: url("/../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-top: -23px;
     z-index: 2;
   }
 }
 
-.item--powder {
+.item-reason__desk--powder {
   &::after {
     width: 50px;
     height: 50px;
@@ -42,14 +45,15 @@
     content: "";
     top: 50%;
     left: 0;
-    transform: translate(12%, -65%);
     background-image: url("/../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-top: -23px;
     z-index: 2;
   }
 }
 
-.item--reception {
+.item-reason__desk--reception {
   &::after {
     width: 50px;
     height: 50px;
@@ -57,14 +61,15 @@
     content: "";
     top: 50%;
     left: 0;
-    transform: translate(10%, -65%);
     background-image: url("/../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-top: -23px;
     z-index: 2;
   }
 }
 
-.item--term {
+.item-reason__desk--term {
   &::after {
     width: 50px;
     height: 50px;
@@ -72,9 +77,20 @@
     content: "";
     top: 50%;
     left: 0;
-    transform: translate(10%, -65%);
     background-image: url("/../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-top: -23px;
     z-index: 2;
   }
 }
+
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .list-reason {
+    @include reset-list;
+    padding-bottom: 42px;
+  }
+

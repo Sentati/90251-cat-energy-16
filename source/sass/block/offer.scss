@@ -30,6 +30,9 @@
 }
 
 .offer__intro {
+  font-family: "Oswald",
+    "Ariel",
+    sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -46,6 +49,8 @@
 }
 
 
+
+// Планшет
 @media (min-width: $tablet-width) {
   .offer__wrapper {
     position: relative;
@@ -67,8 +72,6 @@
   }
 
   .offer__title {
-    font-size: 60px;
-    line-height: 60px;
     color: #111111;
     padding: 0;
     margin-bottom: 42px;

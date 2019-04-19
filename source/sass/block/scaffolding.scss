@@ -14,7 +14,6 @@ html {
 
 
 body {
-  width: 320px;
   padding: 0;
   margin: 0;
 }
@@ -83,4 +82,29 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+// Планшет
+@media (min-width: $tablet-width) { h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  p {
+    font-family: "Arial",
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
