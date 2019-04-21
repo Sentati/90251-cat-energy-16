@@ -12,6 +12,16 @@
 }
 
 .intro-plus__field,
- .intro-plus__value {
+.intro-plus__value {
   padding-bottom: 14px;
+}
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .item-plus {
+    // Временно для сетки
+    min-height: 900px;
+    background-color: yellowgreen;
+  }
 }

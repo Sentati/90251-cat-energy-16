@@ -1,89 +1,12 @@
 .list-reason {
   @include reset-list;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 21px;
 }
 
-.list-reason__item {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
+/*Планшет*/
 
-.item-reason__icon {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-  background-color: #68b738;
-}
-
-
-.item-reason__desk--benefit {
-  &::after {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    background-image: url("/../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
-    margin-left: 6px;
-    margin-top: -23px;
-    z-index: 2;
+@media (min-width: $tablet-width) {
+  .list-reason {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
-
-.item-reason__desk--powder {
-  &::after {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    background-image: url("/../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
-    margin-left: 6px;
-    margin-top: -23px;
-    z-index: 2;
-  }
-}
-
-.item-reason__desk--reception {
-  &::after {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    background-image: url("/../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
-    margin-left: 6px;
-    margin-top: -23px;
-    z-index: 2;
-  }
-}
-
-.item-reason__desk--term {
-  &::after {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    background-image: url("/../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
-    margin-left: 6px;
-    margin-top: -23px;
-    z-index: 2;
-  }
-}
-
-
-// Планшет
-// @media (min-width: $tablet-width)

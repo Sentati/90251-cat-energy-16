@@ -11,7 +11,7 @@
   color: #ffffff;
   font-weight: 400;
   text-align: center;
-  background-image: url("/../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding: 35px 0 152px;
 }
@@ -64,10 +64,10 @@
     position: absolute;
     content: "";
     left: 50%;
-    top: 50%;
-    transform: translateX(-60%);
+    top: 0;
+    transform: translateX(-50%);
     width: 100%;
-    margin-top: 90px;
+    margin-top: 200px;
   }
 
   .offer__title {
@@ -94,7 +94,7 @@
       sans-serif;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
     z-index: 2;
+    margin: 0 120px;
   }
 }

@@ -1,5 +1,6 @@
 .welcome {
-  padding: 30px 20px 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .welcome-wrapper {
@@ -16,4 +17,12 @@
   display: inline-block;
   width: 138px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  // ВРЕМЕННО ДЛЯ СЕТКИ
+  .welcome {
+    min-height: 205px;
+    background-color: green;
+  }
 }

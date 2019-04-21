@@ -8,18 +8,17 @@
 }
 
 .social__button {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
 
   width: 22px;
   height: 19px;
   line-height: 14px;
-}
-
-.st0 {
-  fill: #231f20;
+  margin: 0 20px;
 }
 
 .social__button path {
@@ -35,10 +34,35 @@
   }
 }
 
-.social__button--vk {
-  margin-top: 3px;
+.st0 {
+  fill: #231f20;
 }
 
-.social__button--fb {
-  margin-top: -2px;
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .footer-main__social {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 28px;
+  }
+
+  .social__button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    width: 25px;
+    height: 22px;
+    line-height: 18px;
+    margin: 0;
+    margin-bottom: -6px;
+  }
 }

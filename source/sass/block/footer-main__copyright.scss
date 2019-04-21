@@ -3,13 +3,8 @@
   justify-content: space-between;
   width: 280px;
   padding: 10px 20px;
-  box-sizing: border-box;
 }
 
-    .st0 {
-      fill: #111111;
-    }
-  
 .copyright__text {
   width: 115px;
   height: 16px;
@@ -53,5 +48,28 @@
   &:active {
     fill: #68b738;
     opacity: 0.3;
+  }
+}
+
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .footer-main__copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 10px 20px;
+  }
+
+  .copyright__logo {
+    display: block;
+    width: 40px;
+    height: 50px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: -8px;
+    color: #686868;
   }
 }
