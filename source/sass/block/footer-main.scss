@@ -42,3 +42,13 @@
     border-bottom: 1px solid #d9d9d9;
   }
 }
+
+
+/*Desktop*/
+
+@media (min-width: $desktop-width) {
+  .footer-main {
+    width: 1440px;
+  }
+}
+

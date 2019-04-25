@@ -141,7 +141,86 @@
     font-family: "Oswald", "Ariel,"sans-serif;
     font-size: 16px;
     color: #111111;
-    background-color: #f2f2f2;
+    background-color: $bg-dark;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .energy {
+    position: relative;
+    padding: 78px 45px 60px;
+    margin-bottom: 74px;
+  }
+
+  .energy__title {
+    @include title-two;
+    font-size: 36px;
+    line-height: 37px;
+    position: relative;
+    margin-bottom: 74px;
+    padding-left: 220px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-color: #68b738;
+      border-radius: 50%;
+      margin-top: -55px;
+      margin-left: 160px;
+    }
+
+    &::after {
+      width: 71px;
+      height: 98px;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      margin-left: 152px;
+      margin-top: -58px;
+      z-index: 2;
+    }
+  }
+
+  .energy__intro {
+    width: 469px;
+    margin-bottom: 44px;
+
+    &--BIG {
+      width: 452px;
+    }
+  }
+
+  .energy__title--BIG {
+    &::after {
+      width: 134px;
+      height: 57px;
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-cat-pro.svg");
+      transform: translate(-100%, 25%);
+      margin-left: 170px;
+      margin-top: -20px;
+    }
+  }
+
+  .energy__button {
+    @include button-outline;
+    font-family: "Oswald", "Ariel,"sans-serif;
+    font-size: 16px;
+    color: #111111;
+    background-color: $bg-dark;
     text-align: left;
     padding-left: 20px;
   }

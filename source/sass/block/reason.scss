@@ -25,3 +25,19 @@
     padding-bottom: 74px;
   }
 }
+
+
+/*Desktop*/
+
+@media (min-width: $desktop-width) {
+  .reason {
+    padding: 74px 120px 58px;
+    border-bottom: none;
+  }
+
+  .reason__title {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 74px;
+  }
+}

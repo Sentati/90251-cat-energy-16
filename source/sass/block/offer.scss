@@ -1,3 +1,5 @@
+// Смартфон
+
 .offer__wrapper {
   display: flex;
   flex-direction: column;
@@ -13,15 +15,17 @@
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding: 35px 0 152px;
+  padding: 35px 0 0;
 }
 
 .offer__img {
+  width: 100%;
   position: absolute;
   content: "";
   left: 0%;
   top: 50%;
-  width: 100%;
+  transform: translateY(-50%);
+  margin-top: 50px;
 }
 
 .offer__title {
@@ -45,7 +49,8 @@
   font-family: "Oswald",
     "Ariel",
     sans-serif;
-  margin: 196px 20px 20px;
+  margin: 320px 20px 20px;
+  z-index: 2;
 }
 
 
@@ -55,9 +60,8 @@
     position: relative;
     width: 768px;
     text-align: left;
-    color: #111111;
     background-image: none;
-    padding: 0 120px;
+    padding: 0 30px;
   }
 
   .offer__img {
@@ -71,9 +75,9 @@
   }
 
   .offer__title {
+    width: 420px;
     color: #111111;
-    padding: 0;
-    margin-bottom: 42px;
+    margin: 0 0 42px;
   }
 
   .offer__intro {
@@ -81,7 +85,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #111111;
-    margin-bottom: 42px;
+    margin: 0 90px 42px;
   }
 
   .offer__button {
@@ -95,6 +99,63 @@
     font-size: 20px;
     line-height: 20px;
     z-index: 2;
-    margin: 0 120px;
+    margin: 0 80px;
+  }
+}
+
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .offer__wrapper {
+    width: 1440px;
+    position: relative;
+    text-align: left;
+    color: #111111;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    margin-top: -180px;
+  }
+
+  .offer__img {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 400px;
+    margin-top: 90px;
+    margin-left: 70px;
+    background-size: 100%;
+  }
+
+  .offer__title {
+    display: block;
+    width: 418px;
+    color: #111111;
+    margin: 145px 190px 42px;
+  }
+
+  .offer__intro {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-left: 190px;
+    margin-bottom: 42px;
+  }
+
+  .offer__button {
+    @include button-outline;
+    position: relative;
+    width: 246px;
+    display: block;
+    font-family: "Oswald",
+      "Ariel",
+      sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 190px 110px;
   }
 }

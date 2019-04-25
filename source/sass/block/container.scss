@@ -7,11 +7,13 @@
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
 }
 
 @media (width: $desktop-width) {
   .container {
     width: 1440px;
+    margin: 0 auto;
   }
 }
