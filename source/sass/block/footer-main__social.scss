@@ -10,7 +10,7 @@
 .social__button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -34,10 +34,13 @@
   }
 }
 
-.st0 {
-  fill: #231f20;
-}
+.copyright__logo-img {
 
+  width: 22px;
+  height: 19px;
+  line-height: 14px;
+  margin: 0 20px;
+}
 
 /*Планшет*/
 
@@ -45,24 +48,33 @@
   .footer-main__social {
     @include reset-list;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 130px;
-    height: 28px;
+    border-bottom: 1px solid #d9d9d9;
   }
 
-  .social__button {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+  .copyright__logo-img {
 
-    width: 25px;
-    height: 22px;
-    line-height: 18px;
-    margin: 0;
-    margin-bottom: -6px;
+    width: 22px;
+    height: 19px;
+    line-height: 14px;
+    margin: 0 20px;
+  }
+}
+
+/*Десктоп*/
+
+@media (min-width: $desktop-width) {
+  .footer-main__social {
+    width: 126px;
+  }
+
+  .copyright__logo-img {
+
+    width: 22px;
+    height: 19px;
+    line-height: 14px;
+    margin: 0 20px;
   }
 }

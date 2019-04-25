@@ -35,6 +35,11 @@
   fill: #f06351;
 }
 
+.page-header__logo-img {
+  width: 220px;
+  height: 37px;
+}
+
 .page-header__toggle {
   @include button-outline;
   background-color: #ffffff;
@@ -64,6 +69,11 @@
     margin: 0;
   }
 
+  .page-header__logo-img {
+    width: 172px;
+    height: 57px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -91,6 +101,11 @@
     height: 60px;
     padding: 0 80px 0;
     margin: 0;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+    height: 60px;
   }
 
   .page-header__toggle {
