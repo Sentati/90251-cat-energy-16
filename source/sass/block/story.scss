@@ -4,6 +4,7 @@
 }
 
 .story__title {
+  @include headline;
   margin-bottom: 35px;
 }
 
@@ -11,4 +12,108 @@
   padding: 0;
   margin: 0;
   padding-bottom: 25px;
+}
+
+.story__fact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.story__wrap {
+  position: relative;
+  width: 124px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  padding: 18px 0;
+  box-sizing: border-box;
+
+  &::before {
+    width: 88px;
+    height: 4px;
+    background-color: #f2f2f2;
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--desk {
+    border: none;
+    margin-top: -8px;
+    z-index: 2;
+  }
+}
+
+.story__headline {
+  @include title-two;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  width: 85px;
+}
+
+.story__desk {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 12px;
+
+  text-align: center;
+  width: 124px;
+  box-sizing: border-box;
+  padding: 0 15px 22px;
+}
+
+.story__price {
+  @include title-desk;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .story {
+    width: 768px;
+    padding: 55px 30px 0;
+    background-color: $bg-Light;
+  }
+
+  .story__title {
+    margin-bottom: 65px;
+  }
+
+  .story__intro {
+    margin-bottom: 55px;
+  }
+
+  // ВРЕМЕННО ДЛЯ СЕТКИ
+  .story__fact {
+    position: relative;
+    background-color: coral;
+    min-height: 165px;
+
+    &::after {
+      position: absolute;
+      content: "Заглушки";
+      font-size: 70px;
+      color: #ffffff;
+      margin: 30px 80px;
+    }
+  }
+
+  .story__price {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .story {
+    width: 1440px;
+  }
 }

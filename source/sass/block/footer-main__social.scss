@@ -21,10 +21,6 @@
   margin: 0 20px;
 }
 
-.st0 {
-  fill: #231f20;
-}
-
 .social__button path {
   fill: #686868;
 
@@ -35,5 +31,50 @@
   &:active {
     fill: #68b738;
     opacity: 0.3;
+  }
+}
+
+.copyright__logo-img {
+
+  width: 22px;
+  height: 19px;
+  line-height: 14px;
+  margin: 0 20px;
+}
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .footer-main__social {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .copyright__logo-img {
+
+    width: 22px;
+    height: 19px;
+    line-height: 14px;
+    margin: 0 20px;
+  }
+}
+
+/*Десктоп*/
+
+@media (min-width: $desktop-width) {
+  .footer-main__social {
+    width: 126px;
+  }
+
+  .copyright__logo-img {
+
+    width: 22px;
+    height: 19px;
+    line-height: 14px;
+    margin: 0 20px;
   }
 }

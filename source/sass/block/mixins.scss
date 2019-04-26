@@ -51,17 +51,11 @@
   margin: 0;
 }
 
-// Найден в интернете Мне такое не написать, ума не хватает. Сомневаюсь, что его нужно использовать.
+@mixin no-outline() {
+  outline: none;
+  background: transparent;
 
-// @mixin element-invisible($enforce: true) {
-//   $important: if($enforce, "!important", null);
-
-//   position: absolute #{$important};
-//   width: 1px #{$important};
-//   height: 1px #{$important};
-//   padding: 0 #{$important};
-//   overflow: hidden #{$important};
-//   clip: rect(0, 0, 0, 0) #{$important};
-//   white-space: nowrap #{$important};
-//   border: 0 #{$important};
-// }
+  &::before {
+    display: none;
+  }
+}
