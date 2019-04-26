@@ -1,10 +1,5 @@
 .welcome {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.welcome-wrapper {
-  display: flex;
+  padding: 15px 30px 16px;
 }
 
 .welcome__title {
@@ -20,9 +15,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  // ВРЕМЕННО ДЛЯ СЕТКИ
   .welcome {
-    min-height: 205px;
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px 34px;
+  }
+
+  .welcome__title {
+    @include title-desk;
+    display: inline-block;
+    width: 155px;
+  }
+
+  .welcome__contact {
+    display: inline-block;
+    width: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome {
+    // Временно для сетки
+    background-color: bisque;
   }
 }

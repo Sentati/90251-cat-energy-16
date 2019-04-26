@@ -11,7 +11,7 @@
   }
 }
 
-@media (width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .container {
     width: 1440px;
     margin: 0 auto;
