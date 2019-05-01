@@ -1,22 +1,113 @@
 .main-nav {
+  position: relative;
+  width: 320px;
   padding: 0 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 24px;
+  height: 18px;
+
+  background-color: $bg-Light;
+
+  margin-top: -48px;
+  margin-right: 20px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 9px 0 0 #000000, 0 18px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: #000000;
+  box-shadow: 0 12px 0 0 #000000, 0 24px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .list-navigation {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+    min-height: 0;
+  }
+}
 
 // Планшет
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    padding: 0 30px;
-    box-sizing: border-box;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: auto;
     padding: 0 40px;
     z-index: 2;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

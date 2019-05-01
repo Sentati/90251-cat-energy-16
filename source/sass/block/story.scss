@@ -1,14 +1,15 @@
 .story {
-  padding: 20px;
+  padding: 38px 20px;
   background-color: #f2f2f2;
 }
 
 .story__title {
   @include headline;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
 
 .story__intro {
+  width: 270px;
   padding: 0;
   margin: 0;
   padding-bottom: 25px;
@@ -41,7 +42,7 @@
 
   &--desk {
     border: none;
-    margin-top: -8px;
+    margin-top: -16px;
     z-index: 2;
   }
 }
@@ -79,15 +80,21 @@
 @media (min-width: $tablet-width) {
   .story {
     width: 768px;
-    padding: 55px 30px 0;
+    padding: 45px 30px 0;
     background-color: $bg-Light;
   }
 
   .story__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
     margin-bottom: 65px;
   }
 
   .story__intro {
+    display: block;
+    width: 676px;
     margin-bottom: 55px;
   }
 
@@ -96,14 +103,6 @@
     position: relative;
     background-color: coral;
     min-height: 165px;
-
-    &::after {
-      position: absolute;
-      content: "Заглушки";
-      font-size: 70px;
-      color: #ffffff;
-      margin: 30px 80px;
-    }
   }
 
   .story__price {
@@ -114,6 +113,21 @@
 
 @media (min-width: $desktop-width) {
   .story {
+    display: block;
     width: 1440px;
+    padding: 0 110px;
+    margin: 0;
+  }
+
+  .story__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+  }
+
+  .story__fact {
+    display: block;
   }
 }
