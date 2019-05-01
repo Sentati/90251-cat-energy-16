@@ -1,39 +1,161 @@
-.offer {
+// Смартфон
+
+.offer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   position: relative;
+
   width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald",
+    "Arial",
+    sans-serif;
+  color: #ffffff;
   font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ffffff;
-  background-image: url("/../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: -20px;
-  padding: 35px 20px 162px;
+  padding: 35px 0 0;
 }
 
 .offer__img {
+  width: 100%;
   position: absolute;
   content: "";
-  left: 50%;
-  top: 55%;
-  transform: translateX(-50%);
-  width: 100%;
-  font-size: 14px;
-  line-height: 21px;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 50px;
 }
 
 .offer__title {
-  padding-bottom: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .offer__intro {
+  font-family: "Oswald",
+    "Ariel",
+    sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.offer__button {
+  @include button-outline;
+  display: block;
+  font-family: "Oswald",
+    "Ariel",
+    sans-serif;
+  margin: 320px 20px 20px;
+  z-index: 2;
+}
+
+
+// Планшет
+@media (min-width: $tablet-width) {
+  .offer__wrapper {
+    position: relative;
+    width: 768px;
+    text-align: left;
+    background-image: none;
+    padding: 0 30px;
+  }
+
+  .offer__img {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .offer__title {
+    width: 420px;
+    color: #111111;
+    margin: 0 0 42px;
+  }
+
+  .offer__intro {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    margin: 0 90px 42px;
+  }
+
+  .offer__button {
+    @include button-outline;
+    position: relative;
+    width: 246px;
+    display: block;
+    font-family: "Oswald",
+      "Ariel",
+      sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 2;
+    margin: 0 80px;
+  }
+}
+
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .offer__wrapper {
+    width: 1440px;
+    position: relative;
+    text-align: left;
+    color: #111111;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    margin-top: -180px;
+  }
+
+  .offer__img {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 400px;
+    margin-top: 90px;
+    margin-left: 70px;
+    background-size: 100%;
+  }
+
+  .offer__title {
+    display: block;
+    width: 418px;
+    color: #111111;
+    margin: 145px 190px 42px;
+  }
+
+  .offer__intro {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-left: 190px;
+    margin-bottom: 42px;
+  }
+
+  .offer__button {
+    @include button-outline;
+    position: relative;
+    width: 246px;
+    display: block;
+    font-family: "Oswald",
+      "Ariel",
+      sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 190px 110px;
+  }
 }

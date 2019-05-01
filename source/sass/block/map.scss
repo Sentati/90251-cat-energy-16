@@ -1,19 +1,40 @@
 .map {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .map-img {
   width: 320px;
   height: 400px;
   position: absolute;
-  top: -4%;
-  left: 0;
+  top: 0;
+  // transform: translateY(-50%);
 }
 
 .map iframe {
   position: relative;
   z-index: 2;
   width: 320px;
-  height: 375px;
+  height: 400px;
   border: 0;
+}
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: 768px;
+    min-height: 400px;
+    background-color: darkgoldenrod;
+  }
+}
+
+/*Десктоп*/
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 400px;
+  }
 }

@@ -3,15 +3,10 @@
   justify-content: space-between;
   width: 280px;
   padding: 10px 20px;
-  box-sizing: border-box;
 }
 
-    .st0 {
-      fill: #111111;
-    }
-  
 .copyright__text {
-  width: 115px;
+  width: 120px;
   height: 16px;
   display: block;
   font-size: 16px;
@@ -43,7 +38,12 @@
   color: #686868;
 }
 
-.copyright__logo path {
+.copyright__logo-img {
+  width: 40px;
+  height: 50px;
+}
+
+.copyright__logo-img path {
   fill: #686868;
 
   &:hover {
@@ -53,5 +53,42 @@
   &:active {
     fill: #68b738;
     opacity: 0.3;
+  }
+}
+
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .footer-main__copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 10px 20px;
+  }
+
+  .copyright__logo {
+    display: block;
+    width: 50px;
+    height: 55px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: -8px;
+    color: #686868;
+  }
+
+  .copyright__logo-img {
+    width: 40px;
+    height: 50px;
+  }
+}
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .copyright__logo-img {
+    width: 40px;
+    height: 50px;
   }
 }

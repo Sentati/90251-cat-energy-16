@@ -1,6 +1,6 @@
 .page-header {
-  padding-top: 12px;
-  width: 320px;
+  margin: 0;
+  padding: 12px 20px 0;
 }
 
 .page-header__wrapper {
@@ -8,14 +8,14 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 0 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
   width: 220px;
   height: 37px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
   &:hover {
     opacity: 0.8;
@@ -28,11 +28,16 @@
 
 
 .st0 {
-  fill: #FDC305;
+  fill: #fdc305;
 }
-  
+
 .st1 {
-  fill: #F06351;
+  fill: #f06351;
+}
+
+.page-header__logo-img {
+  width: 220px;
+  height: 37px;
 }
 
 .page-header__toggle {
@@ -40,3 +45,71 @@
   background-color: #ffffff;
   padding-top: 5px;
 }
+
+
+// Планшет
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 60px;
+    margin: 0;
+  }
+
+  .page-header__wrapper {
+    border-bottom: none;
+  }
+
+  .page-header__logo {
+    width: 172px;
+    height: 57px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-header__logo-img {
+    width: 172px;
+    height: 57px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 55px 55px 60px;
+    margin: 0;
+  }
+
+  .page-header__wrapper {
+    width: 580px;
+    z-index: 2;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 60px;
+    padding: 0 80px 0;
+    margin: 0;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+    height: 60px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+

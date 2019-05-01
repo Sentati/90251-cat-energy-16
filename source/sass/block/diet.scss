@@ -2,6 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 0 20px;
+}
+
+
+// Планшет
+
+@media (min-width: $tablet-width) {
+  .diet {
+    padding: 680px 30px 0;
+  }
+}
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .diet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    padding: 80px 120px 0;
+  }
 }

@@ -1,22 +1,61 @@
 .price {
-  display: flex;
-  flex-direction: column;
-  padding: 22px 0;
-}
-
-.price__title {
-  width: 75px;
-}
-
-.price__intro {
-  display: flex;
-  justify-content: space-between;
   width: 140px;
+  border-collapse: collapse;
 }
 
 .price__field,
 .price__value {
-  display: block;
-  width: 45px;
+  padding: 3px 0;
 }
 
+.price__value {
+  text-align: right;
+}
+
+.price__title {
+  width: 75px;
+  padding: 22px 0 12px;
+}
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 250px;
+    margin: 50px 40px 40px;
+    background-color: $bg-dark;
+  }
+
+  .card__img--small {
+    width: 135px;
+    height: 160px;
+    margin-top: -58px;
+  }
+
+  .card__img--big {
+    width: 160px;
+    height: 192px;
+    margin-top: -90px;
+  }
+
+  .price__title {
+    width: 128px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+
+  .price__field,
+  .price__value {
+    width: 126px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 0 5px;
+  }
+
+  .price__value {
+    text-align: right;
+  }
+}

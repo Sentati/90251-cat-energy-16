@@ -1,6 +1,7 @@
 .result {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 .story__img {
@@ -10,4 +11,22 @@
 .result__compare {
   @include title-desk;
   margin-bottom: 15px;
+}
+
+
+/*Планшет*/
+
+@media (min-width: $tablet-width) {
+  // ВРЕМЕННО ДЛЯ СЕТКИ
+  .story__img {
+    width: 708px;
+    min-height: 630px;
+    background-color: burlywood;
+    padding: 10px 80px 0;
+  }
+
+  .result__compare {
+    min-height: 80px;
+    background-color: rgb(221, 243, 97);
+  }
 }
