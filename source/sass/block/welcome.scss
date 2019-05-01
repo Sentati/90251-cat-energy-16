@@ -1,16 +1,18 @@
 .welcome {
-  padding: 15px 30px 16px;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px 16px;
 }
 
 .welcome__title {
   @include title-desk;
   display: inline-block;
-  width: 138px;
+  width: 134px;
 }
 
 .welcome__contact {
   display: inline-block;
-  width: 138px;
+  width: 140px;
   line-height: 20px;
 }
 
@@ -35,7 +37,6 @@
 
 @media (min-width: $desktop-width) {
   .welcome {
-    // Временно для сетки
-    background-color: bisque;
+    display: flex;
   }
 }

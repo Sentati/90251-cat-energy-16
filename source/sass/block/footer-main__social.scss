@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 280px;
+  padding: 0 20px 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -13,9 +14,9 @@
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 
-  width: 22px;
+  width: 21px;
   height: 19px;
   line-height: 14px;
   margin: 0 20px;
@@ -34,13 +35,6 @@
   }
 }
 
-.copyright__logo-img {
-
-  width: 22px;
-  height: 19px;
-  line-height: 14px;
-  margin: 0 20px;
-}
 
 /*Планшет*/
 

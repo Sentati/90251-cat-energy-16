@@ -41,6 +41,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 440px;
+    max-width: 720px;
   }
 
   .list-navigation__item {
@@ -48,8 +49,9 @@
     font-size: 18px;
     line-height: 25px;
     border: none;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-grow: 1;
   }
 
   .list-navigation__item:nth-child(1),
@@ -96,6 +98,11 @@
     color: #ffffff;
   }
 
+  .list-navigation__link--catalog,
+  .list-navigation__link--form {
+    color: #111111;
+  }
+
   .list-navigation__item:nth-child(1),
   .list-navigation__item:nth-child(2) {
     text-align: left;
@@ -108,7 +115,7 @@
 
   .list-navigation__item:nth-child(2),
   .list-navigation__item:nth-child(3) {
-    width: 185px;
+    width: 175px;
   }
 
   .list-navigation-item:nth-child(3) {

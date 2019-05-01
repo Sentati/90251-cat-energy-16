@@ -5,7 +5,9 @@
 
 .price__field,
 .price__value {
-  padding: 3px 0;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
 }
 
 .price__value {
@@ -26,7 +28,7 @@
     align-items: center;
 
     width: 250px;
-    margin: 50px 40px 40px;
+    margin: 50px 38px 32px;
     background-color: $bg-dark;
   }
 
@@ -43,16 +45,76 @@
   }
 
   .price__title {
+    display: block;
     width: 128px;
-    padding-bottom: 24px;
     text-align: center;
+    padding: 0;
+    margin-top: 14px;
+    margin-left: 60px;
+    margin-bottom: 20px;
   }
 
   .price__field,
   .price__value {
     width: 126px;
+    font-size: 16px;
+    line-height: 16px;
     border-bottom: 1px solid #cdcdcd;
-    padding: 5px 0 5px;
+    padding: 6px 0 8px;
+  }
+
+  .price__value {
+    text-align: right;
+  }
+}
+
+
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .price {
+    display: block;
+
+    width: 170px;
+    margin: 50px 0 32px;
+    padding: 0;
+    background-color: $bg-dark;
+  }
+
+  .card__img--small {
+    display: block;
+    width: 135px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: -58px;
+  }
+
+  .card__img--big {
+    display: block;
+    width: 160px;
+    height: 192px;
+    margin: 0 auto;
+    margin-top: -90px;
+  }
+
+  .price__title {
+    width: 130px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .price__field,
+  .price__value {
+    display: inline-block;
+    width: 85px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 6px 0 8px;
+    box-sizing: border-box;
   }
 
   .price__value {

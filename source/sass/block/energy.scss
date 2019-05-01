@@ -1,14 +1,14 @@
 .energy {
   background-color: $bg-dark;
-  padding: 40px 20px 0;
-  margin-bottom: 20px;
+  padding: 32px 20px 0;
+  margin-top: 20px;
 }
 
 .energy__title {
   @include title-two;
   position: relative;
-  padding-left: 94px;
-  margin-bottom: 25px;
+  padding-left: 72px;
+  margin-bottom: 28px;
 
   &::before {
     width: 50px;
@@ -24,7 +24,7 @@
 
   &::after {
     width: 35px;
-    height: 48px;
+    height: 52px;
     position: absolute;
     content: "";
     top: 50%;
@@ -32,8 +32,8 @@
     transform: translateY(-50%);
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
-    margin-left: 8px;
-    margin-top: -4px;
+    margin-left: 10px;
+    margin-top: -2px;
     z-index: 2;
   }
 }
@@ -53,18 +53,18 @@
     background-image: url("../img/icon-cat-pro.svg");
     transform: translateY(-50%);
     margin-left: -9px;
-    margin-top: 2px;
+    margin-top: -1px;
   }
 }
 
 .energy__button {
   @include button-outline;
-  font-family: "Oswald", "Ariel,"sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   color: #111111;
   background-color: #f2f2f2;
   text-align: left;
-  padding-left: 20px;
+  margin: 10px 0;
 }
 
 
@@ -73,8 +73,8 @@
 @media (min-width: $tablet-width) {
   .energy {
     position: relative;
-    padding: 76px 50px 60px;
-    margin-bottom: 32px;
+    padding: 54px 52px 44px;
+    margin-bottom: 30px;
   }
 
   .energy__title {
@@ -82,7 +82,6 @@
     font-size: 36px;
     line-height: 37px;
     position: relative;
-    padding-left: 94px;
     margin-bottom: 25px;
 
     &::before {
@@ -95,7 +94,8 @@
       transform: translate(-100%, 25%);
       background-color: #68b738;
       border-radius: 50%;
-      margin-top: -30px;
+      margin-top: -34px;
+      margin-left: -10px;
     }
 
     &::after {
@@ -108,8 +108,8 @@
       transform: translate(-100%, 25%);
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
-      margin-left: -28px;
-      margin-top: -42px;
+      margin-left: -38px;
+      margin-top: -45px;
       z-index: 2;
     }
   }
@@ -131,19 +131,18 @@
       left: 100%;
       background-image: url("../img/icon-cat-pro.svg");
       transform: translate(-100%, 25%);
-      margin-left: 30px;
-      margin-top: 30px;
+      margin-left: 28px;
+      margin-top: 28px;
     }
   }
 
   .energy__button {
     @include button-outline;
-    font-family: "Oswald", "Ariel,"sans-serif;
-    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
     color: #111111;
     background-color: $bg-dark;
     text-align: left;
-    padding-left: 20px;
   }
 }
 
@@ -152,9 +151,9 @@
 
 @media (min-width: $desktop-width) {
   .energy {
+    width: 570px;
     position: relative;
-    padding: 78px 45px 60px;
-    margin-bottom: 74px;
+    padding: 78px 50px 50px;
   }
 
   .energy__title {
@@ -163,7 +162,7 @@
     line-height: 37px;
     position: relative;
     margin-bottom: 74px;
-    padding-left: 220px;
+    padding-left: 165px;
 
     &::before {
       width: 100px;
@@ -174,8 +173,8 @@
       left: 0;
       background-color: #68b738;
       border-radius: 50%;
-      margin-top: -55px;
-      margin-left: 160px;
+      margin-top: -54px;
+      margin-left: 102px;
     }
 
     &::after {
@@ -187,15 +186,15 @@
       left: 0;
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
-      margin-left: 152px;
-      margin-top: -58px;
+      margin-left: 87px;
+      margin-top: -62px;
       z-index: 2;
     }
   }
 
   .energy__intro {
     width: 469px;
-    margin-bottom: 44px;
+    margin-bottom: 16px;
 
     &--BIG {
       width: 452px;
@@ -210,18 +209,18 @@
       left: 0;
       background-image: url("../img/icon-cat-pro.svg");
       transform: translate(-100%, 25%);
-      margin-left: 170px;
-      margin-top: -20px;
+      margin-left: 120px;
+      margin-top: -22px;
     }
   }
 
   .energy__button {
     @include button-outline;
-    font-family: "Oswald", "Ariel,"sans-serif;
-    font-size: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
     color: #111111;
     background-color: $bg-dark;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 5px;
   }
 }
