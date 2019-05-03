@@ -1,19 +1,19 @@
 .item-plus {
   display: flex;
   flex-direction: column;
-  padding: 16px 0 19px;
+  padding: 12px 0 17px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .item-plus__title {
   @include title-desk;
   line-height: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .intro-plus__field,
 .intro-plus__value {
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 }
 
 /*Планшет*/
@@ -22,6 +22,5 @@
   .item-plus {
     // Временно для сетки
     min-height: 900px;
-    background-color: yellowgreen;
   }
 }

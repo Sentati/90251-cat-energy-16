@@ -12,6 +12,21 @@ html {
   box-sizing: content-box;
 }
 
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/../fonts/fonts/oswaldregular.woff2") format("woff2"),
+    url("/../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: medium;
+  font-style: normal;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
 
 body {
   padding: 0;
@@ -42,7 +57,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
 }
 

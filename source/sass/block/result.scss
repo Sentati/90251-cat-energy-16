@@ -1,7 +1,7 @@
 .result {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 42px;
 }
 
 .story__img {
@@ -10,7 +10,7 @@
 
 .result__compare {
   @include title-desk;
-  margin-bottom: 15px;
+  margin-top: 26px;
 }
 
 

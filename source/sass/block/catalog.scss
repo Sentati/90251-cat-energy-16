@@ -3,7 +3,7 @@
 }
 
 .catalog__wrap-title {
-  padding-bottom: 38px;
+  padding-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -12,12 +12,12 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding: 60px 30px 0;
+    padding: 0 30px 0;
     border-bottom: none;
   }
 
   .catalog__wrap-title {
-    padding-bottom: 150px;
+    padding-bottom: 164px;
     border-bottom: none;
   }
 
@@ -32,3 +32,27 @@
   }
 }
 
+
+// Десктоп
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 110px 0;
+    border-bottom: none;
+  }
+
+  .catalog__wrap-title {
+    padding-bottom: 164px;
+    border-bottom: none;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1220px;
+    padding: 0;
+    margin: 0;
+  }
+}
