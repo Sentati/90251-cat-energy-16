@@ -269,6 +269,11 @@
     margin-left: 50px;
   }
 
+  .item-reason:nth-child(1),
+  .item-reason:nth-child(2) {
+    margin-bottom: 0;
+  }
+
   .item-reason:nth-child(3) {
     width: 250px;
     padding-bottom: 0;
@@ -357,8 +362,10 @@
       background-image: url("../img/advantage-dining@1x.png");
       background-repeat: no-repeat;
       z-index: 2;
+      padding-bottom: 0;
       margin-left: 15px;
       margin-top: 15px;
+      margin-bottom: 0;
     }
 
     &::before {
