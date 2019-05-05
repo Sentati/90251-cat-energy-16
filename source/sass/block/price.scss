@@ -1,6 +1,8 @@
 .price {
   width: 140px;
   border-collapse: collapse;
+  margin: 0;
+  padding: 0;
 }
 
 .price__field,
@@ -28,30 +30,35 @@
     align-items: center;
 
     width: 250px;
-    margin: 50px 38px 32px;
+    margin: 50px 38px 36px;
     background-color: $bg-dark;
   }
 
   .card__img--small {
-    width: 135px;
+    width: 324px;
     height: 160px;
-    margin-top: -58px;
+    margin-top: -46px;
   }
 
   .card__img--big {
-    width: 160px;
+    width: 324px;
     height: 192px;
-    margin-top: -90px;
+    margin-top: -82px;
   }
 
   .price__title {
     display: block;
-    width: 128px;
+    width: 130px;
     text-align: center;
     padding: 0;
-    margin-top: 14px;
+    margin-top: 4px;
     margin-left: 60px;
     margin-bottom: 20px;
+
+    &--small {
+      display: block;
+      margin-top: 0;
+    }
   }
 
   .price__field,
@@ -69,41 +76,29 @@
 }
 
 
-
 // Десктоп
 
 @media (min-width: $desktop-width) {
   .price {
     display: block;
 
-    width: 170px;
-    margin: 50px 0 32px;
-    padding: 0;
+    width: 172px;
+    margin: 0 auto;
+    padding: 50px 0 32px;
     background-color: $bg-dark;
-  }
-
-  .card__img--small {
-    display: block;
-    width: 135px;
-    height: 160px;
-    margin: 0 auto;
-    margin-top: -58px;
-  }
-
-  .card__img--big {
-    display: block;
-    width: 160px;
-    height: 192px;
-    margin: 0 auto;
-    margin-top: -90px;
   }
 
   .price__title {
     width: 130px;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 4px;
     padding-bottom: 20px;
     margin: 0 auto;
+
+    &--small {
+      display: block;
+      padding-top: 0;
+    }
   }
 
   .price__field,

@@ -26,7 +26,7 @@
   width: 124px;
   border: 1px solid #cfcfcf;
   border-radius: 3px;
-  padding: 18px 0;
+  padding: 12px 0;
   box-sizing: border-box;
 
   &::before {
@@ -50,28 +50,29 @@
 .story__headline {
   @include title-two;
   line-height: 24px;
-  margin: 0 auto;
   text-align: center;
   width: 85px;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
 
 .story__desk {
   display: block;
-  margin: 0 auto;
   font-size: 12px;
   line-height: 12px;
+  margin: 0 auto;
 
   text-align: center;
   width: 124px;
   box-sizing: border-box;
-  padding: 0 15px 22px;
+  padding: 0 15px 18px;
 }
 
 .story__price {
   @include title-desk;
   font-size: 14px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 }
 
 

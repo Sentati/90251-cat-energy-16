@@ -1,10 +1,10 @@
-.footer-main__social {
+.social {
   @include reset-list;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 280px;
-  padding: 0 20px 22px;
+  align-content: center;
+  width: 100%;
+  padding: 20px 20px 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -12,17 +12,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 16px;
-
-  width: 21px;
-  height: 19px;
-  line-height: 14px;
-  margin: 0 20px;
 }
 
-.social__button path {
+.social__icon-mobile {
+  padding: 0;
+  margin: 0;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+    margin-left: 53px;
+  }
+
+  &--insta {
+    width: 16px;
+    height: 16px;
+    margin-left: 36px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+    margin-left: 38px;
+  }
+}
+
+.social__icon-mobile path {
   fill: #686868;
 
   &:hover {
@@ -35,40 +50,76 @@
   }
 }
 
+.social__icon {
+  display: none;
+}
+
 
 /*Планшет*/
 
 @media (min-width: $tablet-width) {
-  .footer-main__social {
+  .social {
     @include reset-list;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 130px;
-    border-bottom: 1px solid #d9d9d9;
+    width: 128px;
+    height: 28px;
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 136px;
   }
 
-  .copyright__logo-img {
+  .social__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    width: 22px;
-    height: 19px;
-    line-height: 14px;
-    margin: 0 20px;
+  .social__icon {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  .social__icon path {
+    fill: #686868;
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      fill: #68b738;
+      opacity: 0.3;
+    }
+  }
+
+  .social__icon-mobile {
+    display: none;
   }
 }
 
 /*Десктоп*/
 
 @media (min-width: $desktop-width) {
-  .footer-main__social {
-    width: 126px;
-  }
-
-  .copyright__logo-img {
-
-    width: 22px;
-    height: 19px;
-    line-height: 14px;
-    margin: 0 20px;
+  .social {
+    margin-right: 386px;
   }
 }

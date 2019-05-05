@@ -6,7 +6,7 @@
   justify-content: center;
   position: relative;
 
-  width: 320px;
+  width: 100%;
   font-family: "Oswald",
     "Arial",
     sans-serif;
@@ -16,18 +16,25 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding: 28px 0 0;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .offer__img {
-  width: 90%;
+  display: block;
+  width: 100%;
+  height: 280px;
   position: absolute;
-  content: "";
-  left: 0%;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
-  margin-top: 64px;
-  margin-left: 16px;
+  margin-top: 66px;
+  // margin-left: 2px;
 }
+
 
 .offer__title {
   color: #ffffff;
@@ -59,7 +66,7 @@
 @media (min-width: $tablet-width) {
   .offer__wrapper {
     position: relative;
-    width: 768px;
+    width: 100%;
     text-align: left;
     background-image: none;
     padding: 0 30px;
@@ -71,9 +78,9 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    width: 90%;
-    padding-left: 60px;
-    margin-top: 204px;
+    width: 100%;
+    padding-left: 29px;
+    margin-top: 201px;
   }
 
   .offer__title {
@@ -113,14 +120,20 @@
 
 @media (min-width: $desktop-width) {
   .offer__wrapper {
-    width: 1440px;
+    width: 100%;
     position: relative;
     text-align: left;
     color: #111111;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 100% 0;
+    background-size: 720px 696px;
     background-repeat: no-repeat;
-    margin-top: -205px;
+    margin-top: -158px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .offer__img {
@@ -129,17 +142,17 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    width: 600px;
-    margin-top: 140px;
-    margin-left: 100px;
-    background-size: 100%;
+    width: 100%;
+    height: 499px;
+    margin-top: 142px;
+    margin-left: 531px;
   }
 
   .offer__title {
     display: block;
     width: 418px;
     color: #111111;
-    margin: 236px 160px 42px;
+    margin: 222px 160px 42px;
   }
 
   .offer__intro {
@@ -154,7 +167,7 @@
   .offer__button {
     @include button-outline;
     position: relative;
-    width: 246px;
+    width: 245px;
     display: block;
     font-family: "Oswald",
       "Ariel",
@@ -163,6 +176,6 @@
     line-height: 20px;
     padding-bottom: 16px;
     padding-top: 16px;
-    margin: 14px 160px 190px;
+    margin: 10px 160px 190px;
   }
 }

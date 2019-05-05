@@ -17,7 +17,9 @@
   }
 
   .catalog__wrap-title {
-    padding-bottom: 164px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 164px;
     border-bottom: none;
   }
 
@@ -26,7 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 708px;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -38,21 +40,22 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding: 0 110px 0;
-    border-bottom: none;
+    // border-bottom: none;
   }
 
   .catalog__wrap-title {
-    padding-bottom: 164px;
-    border-bottom: none;
+    margin-top: 30px;
+    margin-bottom: 164px;
+    // border-bottom: none;
   }
 
-  .catalog__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1220px;
-    padding: 0;
-    margin: 0;
-  }
+  // .catalog__wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   width: 100%;
+  //   padding: 0;
+  //   margin: 0;
+  // }
 }

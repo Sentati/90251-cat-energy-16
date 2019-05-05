@@ -101,6 +101,7 @@ input[type="radio"].visually-hidden {
 
 
 // Планшет
+
 @media (min-width: $tablet-width) {
   h1 {
     font-size: 60px;
@@ -124,9 +125,6 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
   }
 }
-<<<<<<< HEAD
-=======
-
 
 // Десктоп
 
@@ -153,4 +151,4 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
   }
 }
->>>>>>> d9829eba1fa623ab6635a95981c966440cbba2c9
+
