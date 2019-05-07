@@ -1,9 +1,10 @@
 .catalog {
-  padding: 28px 20px 0;
+  padding: 28px 0;
 }
 
 .catalog__wrap-title {
   padding-bottom: 40px;
+  margin-left: 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -44,7 +45,7 @@
   }
 
   .catalog__wrap-title {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 164px;
     // border-bottom: none;
   }
