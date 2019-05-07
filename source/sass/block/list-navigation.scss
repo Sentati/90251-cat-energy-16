@@ -90,6 +90,12 @@
   }
 
   .list-navigation__item:nth-child(1),
+  .list-navigation__item-catalog:nth-child(1),
+  .list-navigation__item-form:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .list-navigation__item:nth-child(1),
   .list-navigation__item:nth-child(2) {
     text-align: left;
   }
@@ -126,6 +132,13 @@
     line-height: 24px;
     border: none;
   }
+
+  .list-navigation__item:nth-child(1),
+  .list-navigation__item-catalog:nth-child(1),
+  .list-navigation__item-form:nth-child(1) {
+    padding-top: 0;
+  }
+
 
   .list-navigation__link {
     display: inline-block;
