@@ -18,12 +18,8 @@
   margin-top: 16px;
   margin-bottom: 16px;
 
-  &:hover {
-    color: #68b738;
-  }
-
   &:active {
-    color: #68b738;
+    color: #686868;
     opacity: 0.3;
   }
 }
@@ -39,12 +35,15 @@
 .copyright__logo-img {
   width: 36px;
   height: 42px;
-}
-
-.copyright__logo-img path {
+  padding: 0;
+  margin: 0;
   fill: #686868;
 
   &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
     fill: #68b738;
   }
 
@@ -61,16 +60,16 @@
   .footer-main__copyright {
     display: flex;
     justify-content: space-between;
-    width: 162px;
+    width: 170px;
     height: 50px;
     padding: 0;
     margin: 0;
   }
 
   .copyright__text {
+    display: block;
     width: 116px;
     height: 16px;
-    display: block;
     font-size: 16px;
     line-height: 16px;
     color: #666666;
@@ -82,14 +81,11 @@
     display: block;
     margin: 0;
     padding: 0;
-    color: #686868;
   }
 
   .copyright__logo-img {
     width: 40px;
     height: 50px;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -108,7 +104,5 @@
   .copyright__logo-img {
     width: 40px;
     height: 50px;
-    padding: 0;
-    margin: 0;
   }
 }

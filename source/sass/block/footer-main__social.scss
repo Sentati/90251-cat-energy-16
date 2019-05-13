@@ -15,6 +15,7 @@
 }
 
 .social__icon-mobile {
+  fill: #686868;
   padding: 0;
   margin: 0;
 
@@ -35,12 +36,12 @@
     height: 19px;
     margin-left: 38px;
   }
-}
-
-.social__icon-mobile path {
-  fill: #686868;
 
   &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
     fill: #68b738;
   }
 
@@ -63,12 +64,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 128px;
+    width: 118px;
     height: 28px;
     border-bottom: none;
     padding: 0;
     margin: 0;
-    margin-right: 136px;
+    margin-right: 130px;
   }
 
   .social__button {
@@ -81,6 +82,7 @@
     display: block;
     padding: 0;
     margin: 0;
+    fill: #686868;
 
     &--vk {
       width: 30px;
@@ -96,12 +98,12 @@
       width: 14px;
       height: 28px;
     }
-  }
-
-  .social__icon path {
-    fill: #686868;
 
     &:hover {
+      fill: #68b738;
+    }
+
+    &:focus {
       fill: #68b738;
     }
 
@@ -120,6 +122,6 @@
 
 @media (min-width: $desktop-width) {
   .social {
-    margin-right: 386px;
+    // margin-right: 386px;
   }
 }

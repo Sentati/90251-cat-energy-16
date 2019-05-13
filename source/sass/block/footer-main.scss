@@ -31,7 +31,7 @@
 }
 
 
-/*Планшет*/
+/*Tablet*/
 
 @media (min-width: $tablet-width) {
   .footer-main {
@@ -39,19 +39,18 @@
     flex-direction: row;
     align-items: center;
     align-content: center;
-    width: 100%;
     background-color: $bg-dark;
     padding: 64px 30px 64px;
   }
 
   .footer-main__wrapper {
     border-bottom: none;
-    margin-right: 152px;
+    margin-right: 158px;
   }
 
   .footer-main__logo {
     display: block;
-    width: 130px;
+    width: 132px;
     height: 24px;
     background-image: url("../img/logo-footer.svg");
     background-repeat: no-repeat;

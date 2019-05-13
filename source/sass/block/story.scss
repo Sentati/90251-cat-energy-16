@@ -5,14 +5,13 @@
 
 .story__title {
   @include headline;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 .story__intro {
   width: 270px;
   padding: 0;
-  margin: 0;
-  padding-bottom: 25px;
+  margin: 0 0 25px;
 }
 
 .story__fact {
@@ -81,7 +80,7 @@
 @media (min-width: $tablet-width) {
   .story {
     width: 768px;
-    padding: 45px 30px 0;
+    padding: 45px 30px;
     background-color: $bg-Light;
   }
 
@@ -115,8 +114,7 @@
 @media (min-width: $desktop-width) {
   .story {
     display: block;
-    width: 1440px;
-    padding: 0 110px;
+    padding: 0;
     margin: 0;
   }
 

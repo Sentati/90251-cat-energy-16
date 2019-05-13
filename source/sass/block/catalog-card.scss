@@ -150,9 +150,10 @@
 
 @media (min-width: $desktop-width) {
   .card {
-    display: block;
-    width: 250px;
-    padding: 0 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 245px;
     background-color: $bg-dark;
     margin-bottom: 144px;
   }

@@ -113,8 +113,8 @@
 @media (min-width: $tablet-width) {
   .item-reason {
     display: block;
+    width: 50%;
     position: relative;
-    // width: 324px;
     padding: 0;
     padding-top: 80px;
     padding-bottom: 138px;
@@ -130,10 +130,10 @@
     }
   }
 
-  .item-reason:nth-child(1),
-  .item-reason:nth-child(3) {
-    width: 386px;
-  }
+  // .item-reason:nth-child(1),
+  // .item-reason:nth-child(3) {
+  //   width: 29.5%;
+  // }
 
   .item-reason:nth-child(1),
   .item-reason:nth-child(2) {
@@ -257,9 +257,8 @@
 @media (min-width: $desktop-width) {
   .item-reason {
     position: relative;
-    width: 250px;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 78px;
 
     &::before {
       width: 80px;
@@ -272,25 +271,21 @@
     }
   }
 
-  .item-reason:nth-child(1) {
-    width: 250px;
-    margin-left: 50px;
-  }
-
   .item-reason:nth-child(1),
   .item-reason:nth-child(2) {
+    width: 250px;
     margin-bottom: 0;
   }
 
   .item-reason:nth-child(3) {
-    width: 250px;
+    width: 252px;
     padding-bottom: 0;
     margin: 0;
   }
 
   .item-reason:nth-child(4) {
+    width: 242px;
     margin: 0;
-    margin-right: 45px;
     padding-bottom: 0;
   }
 
@@ -300,10 +295,10 @@
     margin-top: 35px;
 
     &::before {
-      width: 354px;
+      width: 100%;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
-      text-align: center;
+      text-align: right;
       color: #f2f2f2;
       position: absolute;
       top: 0;
@@ -332,6 +327,7 @@
 
     &::before {
       content: "1";
+      margin-left: -14px;
     }
   }
 
