@@ -113,7 +113,7 @@
 @media (min-width: $tablet-width) {
   .item-reason {
     display: block;
-    width: 50%;
+    width: 45.6%;
     position: relative;
     padding: 0;
     padding-top: 80px;
@@ -130,10 +130,10 @@
     }
   }
 
-  // .item-reason:nth-child(1),
-  // .item-reason:nth-child(3) {
-  //   width: 29.5%;
-  // }
+  .item-reason:nth-child(1),
+  .item-reason:nth-child(3) {
+    width: 54.4%;
+  }
 
   .item-reason:nth-child(1),
   .item-reason:nth-child(2) {

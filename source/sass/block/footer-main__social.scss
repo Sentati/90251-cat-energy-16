@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.social__icon-mobile {
+.social__icon {
   fill: #686868;
   padding: 0;
   margin: 0;
@@ -51,9 +51,12 @@
   }
 }
 
-.social__icon {
-  display: none;
-}
+// .vk {
+//   display: block;
+//   width: 22px;
+//   height: 12px;
+//   margin-left: 53px;
+// }
 
 
 /*Планшет*/
@@ -111,10 +114,6 @@
       fill: #68b738;
       opacity: 0.3;
     }
-  }
-
-  .social__icon-mobile {
-    display: none;
   }
 }
 
